@@ -1,0 +1,90 @@
+.primary-btn {
+    padding: 18px 10px;
+    background-color: #000;
+    color: #fff;
+    min-width: 220px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* gap: 8px; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.outline-btn {
+    padding: 18px 10px;
+    border: 1px solid #000;
+    color: #000000;
+    min-width: 220px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* gap: 8px; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* For devices with width 1280px or more */
+@media (min-width: 1280px) {
+    .primary-btn, .outline-btn {
+        padding: 18px 10px;
+        min-width: 220px;
+        border-radius: 15px;
+    }
+    button {
+        font-size: 16px;
+    }
+}
+
+/* For devices with width between 1024px and 1279px */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .primary-btn, .outline-btn {
+        padding: 16px 8px;
+        min-width: 200px;
+        border-radius: 5px;
+    }
+    button {
+        font-size: 15px;
+    }
+}
+
+/* For devices with width between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .primary-btn, .outline-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 8px;
+        min-width: 180px;
+        border-radius: 5px;
+    }
+    button {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+}
+
+/* For devices with width less than 768px */
+@media (max-width: 767px) {
+    .primary-btn, .outline-btn {   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 6px;
+        min-width: 160px;
+        border-radius: 4px;
+    }
+    button {
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+

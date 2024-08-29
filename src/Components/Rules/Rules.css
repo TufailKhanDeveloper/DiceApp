@@ -1,0 +1,105 @@
+.rules {
+    width: Hug (794px)px;
+    padding: 20px 0px 0px 0px;
+    gap: 24px;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    height: Hug (208px)px;
+}
+
+.main-heading {
+    margin: 0;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.para p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px px;
+}
+
+/* For devices with width 1280px or more */
+@media (min-width: 1280px) {
+    .rules {
+        width: 794px;
+        height: 208px;
+        padding: 20px 0 0;
+        gap: 24px;
+    }
+
+    .main-heading {
+        font-size: 24px;
+    }
+
+    .para p {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+}
+
+/* For devices with width between 1024px and 1279px */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .rules {
+        width: 700px;
+        height: 190px;
+        padding: 18px 0 0;
+        gap: 20px;
+    }
+
+    .main-heading {
+        font-size: 22px;
+    }
+
+    .para p {
+        font-size: 15px;
+        margin: 18px 0;
+    }
+}
+
+/* For devices with width between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .rules {
+        width: 600px;
+        height: 180px;
+        padding: 16px 0 0;
+        gap: 18px;
+    }
+
+    .main-heading {
+        font-size: 20px;
+    }
+
+    .para p {
+        font-size: 14px;
+        margin: 16px 0;
+    }
+}
+
+/* For devices with width less than 768px */
+@media (max-width: 767px) {
+    .rules {
+        width: 100%;
+        height: auto;
+        padding: 14px 0 0;
+        gap: 16px;
+        padding: 0px 10px;
+        margin-top: 20px;
+        /* background-color: #ded5d5; */
+
+    }
+
+    .main-heading {
+        font-size: 18px;
+    }
+
+    .para p {
+        width: 100%;
+        font-size: 13px;
+        margin: 14px 0 0px 0px;
+    }
+}

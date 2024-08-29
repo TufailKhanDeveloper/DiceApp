@@ -1,0 +1,83 @@
+.cube {
+    height: calc(100vh - 50vh);
+    width: Hug (250px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 110px auto 0px auto;
+    align-items: center;
+}
+
+.cube p {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.cube img:hover {
+    transform: scale(1.1); /* Corrected scale syntax */
+    transition: transform 0.9s; /* Added transition for smooth scaling */
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.display{
+    display: none;
+}
+
+/* For devices with width 1280px or more */
+@media (min-width: 1280px) {
+    .cube {
+        width: 250px;
+        height: calc(100vh - 50vh);
+    }
+    .cube p {
+        font-size: 24px;
+    }
+}
+
+/* For devices with width between 1024px and 1279px */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .cube {
+        width: 220px;
+        height: calc(100vh - 50vh);
+    }
+    .cube p {
+        font-size: 22px;
+    }
+}
+
+/* For devices with width between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cube {
+        width: 200px;
+        height: calc(100vh - 50vh);
+    }
+    .cube p {
+        font-size: 20px;
+    }
+}
+
+/* For devices with width less than 768px */
+@media (max-width: 767px) {
+    .cube {
+        width: 180px;
+        height: calc(100vh - 40vh);
+        margin: 80px auto 0px auto;
+        
+    }
+    .cube p {
+        font-size: 18px;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+    }
+}

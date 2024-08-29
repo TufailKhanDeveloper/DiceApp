@@ -1,0 +1,163 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin: 40px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 72px;
+    /* Match the height of the dice numbers */
+}
+
+.navbar .score h1 {
+    font-family: Poppins;
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 1;
+    /* Ensure line height doesn't push text vertically */
+    margin: 0;
+    /*Remove default margin*/
+}
+
+.navbar .score p {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    /* Adjust line height to align text */
+    margin: 0;
+    /*Remove default margin */
+}
+
+.navbar .dice-numbers ul {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    /* Fixed height */
+}
+
+.navbar .dice-numbers ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 72px;
+    width: 72px;
+    border: 1px solid #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+.navbar .dice-numbers ul li:hover {
+    background-color: #000;
+    color: white;
+}
+
+.navbar .dice-numbers ul li.selected {
+    background-color: #000;
+    color: white;
+}
+
+.navbar .dice-numbers p {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 36px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.redMessage{
+    color: red;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.noDisplay{
+    display: none;
+}
+
+/* For devices with width 1280px or more */
+@media (min-width: 1280px) {
+    .navbar {
+        max-width: 1280px;
+        height: auto;
+    }
+}
+
+/* For devices with width between 1024px and 1279px */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .navbar {
+        max-width: 1024px;
+    }
+    .navbar .score h1 {
+        font-size: 80px;
+    }
+    .navbar .score p,
+    .navbar .dice-numbers ul li,
+    .navbar .dice-numbers p {
+        font-size: 20px;
+    }
+    .navbar .dice-numbers ul li {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+/* For devices with width between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        max-width: 768px;
+    }
+    .navbar .score h1 {
+        font-size: 60px;
+    }
+    .navbar .score p,
+    .navbar .dice-numbers ul li,
+    .navbar .dice-numbers p {
+        font-size: 18px;
+    }
+    .navbar .dice-numbers ul li {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* For devices with width less than 768px */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+    .navbar .score h1 {
+        font-size: 40px;
+    }
+    .navbar .score p,
+    .navbar .dice-numbers ul li,
+    .navbar .dice-numbers p {
+        font-size: 16px;
+    }
+    .navbar .dice-numbers ul li {
+        height: 40px;
+        width: 40px;
+    }
+}

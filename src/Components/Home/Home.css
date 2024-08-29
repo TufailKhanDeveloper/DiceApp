@@ -1,0 +1,92 @@
+.container {
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text Button {
+    margin-left: 300px;
+}
+
+.text h1 {
+    font-family: Poppins;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 144px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    .dice-image img {
+        max-width: 400px;
+        /* Larger image on larger screens */
+    }
+
+    .text h1 {
+        font-size: 48px;
+    }
+
+    .btn {
+        font-size: 18px;
+        /* Adjust button text size for larger screens */
+    }
+}
+
+/* For devices with width between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .dice-image img {
+        max-width: 350px;
+    }
+
+    .text h1 {
+        font-size: 80px;
+
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
+
+/* For devices with width less than 768px */
+@media (max-width: 767px) {
+    .container {
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dice-image img {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .text h1 {
+        font-size: 80px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 16px 12px;
+        /* Adjust button padding for smaller screens */
+    }
+}
